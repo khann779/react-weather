@@ -42,7 +42,7 @@ const App = () => {
     <div className='App'>
       <div className='container'>
         <div className='h2'>
-          <h2>Weather</h2>
+          {data.city ? <h2>Weather in {data.city.name}</h2> : null}
         </div>
 
         <form className='search' onSubmit={searchLocation}>
@@ -61,19 +61,18 @@ const App = () => {
         <div className='weather'>
           <div className='weather_today'>
             <div className='today_icon'>
-              <i className='bi bi-cloud-drizzle' />
+              {data.city ? <i className='bi bi-cloud-drizzle' /> : null}
             </div>
             <div className='today_info'>
-              <div className='info_h4'>
-                <h4>Today</h4>
-              </div>
+              <div className='info_h4'>{data.city ? <h4>Today</h4> : null}</div>
               <div className='city'>
                 {data.city ? <h3>{data.city.name}</h3> : null}
               </div>
               <div className='temprature'>
-                <h4>Temprature:</h4>
                 {allDays.length ? (
-                  <h4>{Math.ceil(allDays[0].main.temp - 273)} °C</h4>
+                  <h4>
+                    Temprature: {Math.ceil(allDays[0].main.temp - 273)} °C
+                  </h4>
                 ) : null}
               </div>
               <div className='temp_desc'>
