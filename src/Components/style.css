@@ -1,0 +1,106 @@
+body {
+  background-image: url(https://images.wallpaperscraft.ru/image/single/nebo_oblaka_svet_84366_1920x1080.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2 h2 {
+  font-size: 70px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  width: 30rem;
+  height: 2.3rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 2rem 0;
+}
+
+.weather {
+  width: 60rem;
+  padding: 0 2rem;
+  background-color: rgba(255, 255, 255, 0.309);
+  border-radius: 20px;
+}
+
+.weather_today {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.today_icon {
+  margin: 0 2rem;
+}
+
+.today_icon i {
+  font-size: 15rem;
+}
+
+.info_h4 h4 {
+  font-size: 1.5rem;
+}
+
+.city h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.temprature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.temprature h4 {
+  font-size: 1.5rem;
+  margin: 0 0.2rem;
+}
+
+.temp_desc h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.weather_week {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.week_day {
+  width: 100%;
+  border: 2px solid black;
+  margin-bottom: 1.6rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.week_icon i {
+  font-size: 5rem;
+}
+
+.week_day p {
+  font-size: 1.5rem;
+}
